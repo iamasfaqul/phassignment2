@@ -3,22 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>TechWave</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <nav class="nav-container">
-        <div class="logo"></div>
-        <div class="menu">
-            <ul>
-                <li>About</li>
-                <li>Episodes</li>
-                <li>Host</li>
+    <nav class="bg-[#120524] w-full"> 
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-4 md:px-8 md:py-5">
+        
+        <div class="logo cursor-pointer">
+            <img class="h-8 md:h-10" src="./B13-A02-TechWave/assets/TechWave.png" alt="TechWave">
+        </div>
+        
+        <div class="hidden md:block">
+            <ul class="menu flex justify-center items-center gap-8 text-white font-medium">
+                <li class="cursor-pointer hover:text-pink-400">About</li>
+                <li class="cursor-pointer hover:text-pink-400">Episodes</li>
+                <li class="cursor-pointer hover:text-pink-400">Host</li>
             </ul>
         </div>
-        <div class="subs-button">
-            <button>
-                Subscribe
-            </button>
+        
+        <div class="flex items-center gap-4">
+            
+            <div class="subs-button hidden md:block">
+                <button class="bg-gradient-to-r from-[#F9E63E] via-[#FF26B9] to-[#9106FF] text-white px-6 py-2.5 rounded-full font-semibold flex items-center gap-2">
+                    Subscribe 
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="md:hidden cursor-pointer">
+                <i class="fa-solid fa-bars text-2xl text-white"></i>
+                </div>
+
+            </div>
         </div>
     </nav>
     <section class="hero-section">
